@@ -1,42 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Position Property</title>
+    <title>Position property</title>
     <style>
-        p {
-            background-color: rgb(25, 0, 255);
-            color: white;
+        *{
+            margin: 0%;
+            padding: 0%;
         }
-
-        /* div p:first-child{ */
-        div p:nth-child(2) {
-
-            background-color: yellow;
-            color: red
+          .box{
+            height: 433px;
+            width: 80vw;
+            padding: 3px;
+            margin: 3px;
+            border: 2px solid black;
+        }
+        .box1{
+            background-color: orangered;
+            height: 100px;
+            width: 100%;
+            padding: 0%;
+            margin: 0%;
+            border: 2px solid black;
+            position: absolute;
+            top: 0px;
+            left: 3px; 
+            position: sticky;
+            top: 0px;  
+        }
+        
+        .box2{
+            color: white;
+            background-color: black;
+            /* height: 200px;
+            width: 80vw;
+            padding: 3px;
+            margin: 3px;
+            border: 2px solid black; */
+            /* position: relative;
+            top: 34px;
+            left: 56px; */
+            
+        }
+        .box3{background-color: green;
+            height: 200px;
+            width: 80vw;
+            padding: 3px;
+            margin: 3px;
+            border: 2px solid black;
+            position: fixed;
+            bottom: 0%;
+            left: 8vw;
+        }
+        .box4{ background-color: lightgoldenrodyellow;
+            height: 00px;
+            width: 80vw;
+            padding: 3px;
+            margin: 3px;
+            border: 2px solid black;
+        }
+        
+        .parent{
+            
+            padding: 43px;
+            margin: 34px;
+            border: 3px solid black;
+            /* Exception: transform, filter, or perspective properties can also make an
+            element appear as positioned */
+            position: relative;
+            /* transform: translate(0); */
+            /* filter: invert(0); */
+            /* perspective: 0em; */
         }
     </style>
 </head>
-
 <body>
-    <!-- write html and css code to style a paragraph inside a div which contains 5 other paragraphs. The first paragraph
-    must have background color yellow and text color red. The other paragraph must have background color blue and text
-    color whtie. The HMTL is written below for your reference. Do not change this html -->
-    <div>
-        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla a, consectetur, ipsum assumenda asperiores
-            provident quidem, iste possimus consequuntur odio sequi consequatur quas voluptates ullam sapiente dolorum
-            fugiat ducimus maxime praesentium alias nam reprehenderit laborum hic. Iure eveniet repudiandae dolor ex
-            fugit, veniam animi? Illo alias aut earum provident error.</P>
-        <p>I am saif</p>
-        <p>I live in muzaffarpur bihar </p>
-    </div>
-    <div>
-        <p>Yo 😎 this is also Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam non tenetur aut, unde
-            corrupti incidunt similique ducimus id reprehenderit est repudiandae dicta praesentium officiis fuga at
-            pariatur fugiat numquam illo fugit accusamus quisquam, aliquid neque? Minus veniam eum quis dicta!</p>
+    <div class="parent">
+    <div class="box1">My name is saif </div>
+    <div class="box2">I am from muzaffapur bihar </div>
+    <div class="box3">I still live in muzaffapur </div>
+    <div class="box4">And I also Indian </div>
     </div>
 </body>
-
 </html>
